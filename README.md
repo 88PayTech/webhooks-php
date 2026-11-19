@@ -1,5 +1,11 @@
 # 88Pay Webhooks for PHP
 
+[![CI](https://github.com/88PayTech/webhooks-php/actions/workflows/ci.yml/badge.svg)](https://github.com/88PayTech/webhooks-php/actions/workflows/ci.yml)
+[![Packagist version](https://img.shields.io/packagist/v/88pay/webhooks)](https://packagist.org/packages/88pay/webhooks)
+[![PHP version](https://img.shields.io/packagist/dependency-v/88pay/webhooks/php)](https://packagist.org/packages/88pay/webhooks)
+![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
+[![License](https://img.shields.io/badge/license-proprietary-blue)](LICENSE)
+
 Verify the notifications (webhooks) 88Pay sends to your `notification_url`.
 
 Every notification is checked three ways before your code sees it:
@@ -151,7 +157,16 @@ Keep your server clock synced (NTP). Do not raise the tolerance to work around a
 
 ## Security
 
-See [SECURITY.md](SECURITY.md) to report a vulnerability.
+Every release is built and signed on GitHub Actions with a
+[build provenance attestation](https://github.com/88PayTech/webhooks-php/attestations)
+for the exact archive Composer installs. To check a release yourself:
+
+```bash
+gh release download v1.0.0 --repo 88PayTech/webhooks-php --pattern '*.zip'
+gh attestation verify webhooks-php-v1.0.0.zip --repo 88PayTech/webhooks-php
+```
+
+To report a vulnerability, see [SECURITY.md](SECURITY.md).
 
 ## License
 
