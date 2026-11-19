@@ -1,0 +1,29 @@
+{
+    "name": "88pay/webhooks",
+    "description": "Verify notifications (webhooks) sent by 88Pay: HMAC-SHA256 signature, timestamp window and AES-256-GCM authorization token.",
+    "type": "library",
+    "license": "proprietary",
+    "keywords": ["88pay", "webhook", "webhooks", "signature", "hmac", "payments"],
+    "homepage": "https://developers.88pay.io/es/guides/webhooks",
+    "support": {
+        "docs": "https://developers.88pay.io/es/guides/webhooks",
+        "source": "https://github.com/88PayTech/webhooks-php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-hash": "*",
+        "ext-json": "*",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "EightyEightPay\\Webhooks\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,63 @@
+88Pay Webhooks for PHP - Proprietary License
+
+Copyright (c) 2026 88 TECH GROUP S.A.S. All rights reserved.
+
+The source code of this software (the "Software") is publicly visible so that
+merchants can review it before using it. Visibility does not grant any right
+other than those expressly stated below.
+
+1. Grant
+
+   88 TECH GROUP S.A.S. ("88Pay") grants you a non-exclusive, non-transferable,
+   non-sublicensable, revocable, royalty-free license to install and use the
+   Software, unmodified, for the sole purpose of receiving and verifying
+   notifications sent by 88Pay in connection with your 88Pay merchant account.
+
+   This includes the copies that are technically required for that purpose,
+   such as installation through Composer, deployment to your servers and
+   backups.
+
+2. Restrictions
+
+   Unless 88Pay authorizes it in writing, you may not:
+
+   a. modify, adapt, translate or create derivative works of the Software;
+   b. copy, distribute, publish, sell, rent or sublicense the Software, except
+      as an unmodified dependency of your own application under section 1;
+   c. use the Software, in whole or in part, for any purpose other than the
+      one stated in section 1, including in other products or services;
+   d. remove or alter this notice or any copyright notice in the Software.
+
+3. Security research
+
+   Nothing in this license prevents you from reviewing the Software and
+   reporting vulnerabilities as described in SECURITY.md.
+
+4. Ownership
+
+   The Software is licensed, not sold. 88Pay retains all rights, title and
+   interest in the Software, including all intellectual property rights.
+
+5. Termination
+
+   This license terminates automatically if you breach it or when you no
+   longer have an 88Pay merchant account. On termination you must stop using
+   the Software and delete all copies.
+
+6. Disclaimer of warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+7. Limitation of liability
+
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL 88PAY BE LIABLE
+   FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+   CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+   SOFTWARE OR ITS USE.
+
+8. Governing law
+
+   This license is governed by the laws of the Republic of Colombia. Your use
+   of 88Pay services remains governed by your agreement with 88Pay.

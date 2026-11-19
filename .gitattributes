@@ -1,0 +1,7 @@
+# Only src/, README, LICENSE and composer.json reach client projects.
+/.github export-ignore
+/tests export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/SECURITY.md export-ignore
+/CHANGELOG.md export-ignore
