@@ -1,0 +1,50 @@
+[
+  {
+    "name": "payin_snake_case",
+    "key": "773047d443389cbd1be8d6b7c9d6a3f2fa82e026d39f7648eddee4d5b14c36cf",
+    "rawBody": "{\"transaction_date\":\"2026-11-17 15:53:03\",\"transaction_status\":\"COMPLETED\",\"transaction_id\":\"sess_00000000-0000-4000-8000-000000000001\",\"transaction_amount\":\"20.00\",\"transaction_payment_method\":\"PIX\",\"transaction_country\":\"BRA\",\"transaction_currency\":\"BRL\",\"transaction_reference\":\"TESTREF0000001\",\"transaction_customer_id\":\"customer-1\",\"transaction_merchant_reference\":\"order-1\"}",
+    "headers": {
+      "x-request-id": "89d9e4b1-3b38-4acc-aa0f-1f3153809a88",
+      "x-88pay-timestamp": "1795008429703",
+      "x-88pay-signature": "v1=sSz8MrggDQ0hDQQD7XoU8cpGEC6XAn1Uz20DXkf9MCU",
+      "authorization": "Bearer h9mv4EuOKtOCoZpnCbEoa7SYWnk9lR95WKlg5VVDAC+JGCEKhvQmI8lM00PBjFnAYsw5VFVUY9M5y8bWam48LmqMEYy4RjdmcLhTEcAVr00oMTsb6hAAQjAjKe+VtJfQrNSTBm5Y4WfcYX6aq3Y4ajYNuC/iPjIxJsquuWQEcTIBtpFGyETQ10ST3F+9QnwRxZ4ALE2D"
+    },
+    "nowMs": 1795008430703,
+    "expected": {
+      "transactionId": "sess_00000000-0000-4000-8000-000000000001",
+      "amount": "20.00"
+    }
+  },
+  {
+    "name": "legacy_camel_case",
+    "key": "ad7f6f5c911b861dc07ad6f7b850a42557cb1db57e76cb9ccdd5a431d634ad45",
+    "rawBody": "{\"transactionStatus\":\"REJECTED\",\"transactionId\":\"sess_00000000-0000-4000-8000-000000000002\",\"totalAmount\":150000,\"paymentMethod\":\"CARDS\",\"numeroOrden\":\"TESTREF0000002\"}",
+    "headers": {
+      "x-request-id": "527aeb7a-d078-4066-a363-7fdd5f495fd9",
+      "x-88pay-timestamp": "1795008429703",
+      "x-88pay-signature": "v1=o4xqdG6oFo1CDrIxyFilln8rj-vAiBQ7EW38GCML4UU",
+      "authorization": "Bearer p/ioQ8AcASI0vswTfghGbXhXSnhUFvdj8ob7OxK6FoA/eoMP9EYCAwmwAWYOi003bJ4eHlUXndNsxiZs0ZfWji5CSehA2hiDV9FJmgJuzbWi6kjNhp9u8ENx6c246Q4koDS+Ff5B2KLIFhmXnZ2jQ8HvBAM9xijzp6pAfYPoUoqApkP/lMZaDnpOQ7eit5SECM+OFr9VqA=="
+    },
+    "nowMs": 1795008430703,
+    "expected": {
+      "transactionId": "sess_00000000-0000-4000-8000-000000000002",
+      "amount": "150000"
+    }
+  },
+  {
+    "name": "unicode_and_slashes",
+    "key": "260a15216b81e8be97a19b08440c23fbc4e504085255deeadbf2c2b5716b9ba7",
+    "rawBody": "{\"transaction_status\":\"COMPLETED\",\"transaction_id\":\"sess_3\",\"transaction_amount\":\"1.50\",\"note\":\"Pago Móvil / niño ✓\",\"url\":\"https://example.com/a/b\"}",
+    "headers": {
+      "x-request-id": "b7b8d5b4-90d1-4362-9350-ab0bf9b36987",
+      "x-88pay-timestamp": "1795008429703",
+      "x-88pay-signature": "v1=VGvZM-hNDEoYGpG-UMGKiDViJ7oKJH9A32ir4OJpIlA",
+      "authorization": "Bearer l+y/Nm5gD70hl/3iQH4AApxmFS2yXYN+HvFWNoap2N30uMkmfYZdl3jhZgSONeAXJCaVPdJP4hV4gS7hqsXNkK2cOB/xMuD6E8vNQaGT38RdPGNrq12BVH4jiIuR4+0u0stYZZ2PNJ5A9oQlTDnYZr5U"
+    },
+    "nowMs": 1795008430703,
+    "expected": {
+      "transactionId": "sess_3",
+      "amount": "1.50"
+    }
+  }
+]
